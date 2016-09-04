@@ -43,6 +43,18 @@ At this point you should recieve mail at your destination email.
 
 At this point you should recieve mail with img.
 
+## Hook up at script login
+
+1. Start Automator.app
+2. Select "Application"
+3. click "Show library" in the toolbar (if hidden)
+4. Add "Run shell script" (from the Actions/Utilities)
+5. Copy&paste your script into the window
+6. Test it
+7. Save somewhere, for example you can make an "Applications" folder in your HOME (you will get an your_name.app)
+8. Go to System Preferences -> Accounts -> Login items
+9. Add this app
+
 ## DEBUG:
 
 ### Checking mail queue
