@@ -38,7 +38,7 @@ At this point you should recieve mail at your destination email.
 
 ## Test sending snap:
 ```
-/usr/local/bin/imagesnap /tmp/photo.jpg > /dev/null && /usr/local/bin/mpack -s "OSX usage: $(date)" /tmp/photo.jpg destination@gmail.com
+IMG_DATE="$(date +%Y-%m-%d:%H:%M:%S)" /usr/local/bin/imagesnap -w 2 /tmp/$IMG_DATE.jpg > /dev/null && /usr/local/bin/mpack -s "OSX usage: $(date)" /tmp/$IMG_DATE.jpg destination@gmail.com
 ```
 
 At this point you should recieve mail with img.
